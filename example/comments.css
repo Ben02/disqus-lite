@@ -1,0 +1,136 @@
+.comment_num, .comment_create, .comment_change {
+  color: rgb(42,46,46);
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: rgb(86,148,241) 2px solid;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+.comment_create {
+  margin-left: 24px;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.comment_change {
+  border-bottom: 0;
+  float: right;
+  margin-top: 1px;
+  cursor: pointer;
+}
+.comment_avatar {
+  float: left;
+  border-radius: 3px;
+  height: 48px;
+  width: 48px;
+  background: rgb(221, 221, 221);
+}
+.comment_desc {
+  margin-left: 62px;
+}
+.author_name {
+  display: inline;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(101, 108, 122);
+}
+.comment_time, .comment_reply {
+  color: rgb(101, 108, 122);
+  font-size: 12px;
+}
+.comment_reply {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.comment_message {
+  margin-left: 62px;
+  font-size: 15px;
+}
+.comment_message p {
+  color: rgb(42, 46, 46);
+}
+.comment_children {
+  margin-left: 62px;
+}
+.comment_children .comment_avatar {
+  height: 36px;
+  width: 36px;
+  margin-top: 7px;
+}
+.comment_children .comment_desc {
+  margin-left: 50px;
+}
+.comment_children .comment_message {
+  margin-left: 50px;
+}
+#comment_title {
+  height: 30px;
+  border-bottom: 2px solid rgb(231,233,238);
+  margin-bottom: 20px;
+  margin-top: 34px;
+}
+.comment_loading {
+  display: block;
+  margin: 30px auto;
+}
+@media screen and (max-width: 660px) {
+    .comment_avatar, .comment_children .comment_avatar {
+      width: 30px;
+      height: 30px;
+    }
+    .comment_desc, .comment_children .comment_desc, .comment_message, .comment_children .comment_message {
+      margin-left: 40px;
+    }
+    .author_name {
+      display: block;
+      line-height: 1;
+      margin-bottom: 2px;
+      font-size: 15px;
+    }
+    .comment_children .comment_avatar{
+      margin-top:0;
+    }
+    .comment_children {
+      margin-left: 0;
+      border-left: 2px solid rgb(231,233,238);
+      padding-left: 15px;
+    }
+    .comment_message, .comment_children .comment_message {
+      margin-left:0;
+      margin-top: 4px;
+    }
+}
+.animated {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}

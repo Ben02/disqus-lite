@@ -1,0 +1,6 @@
+location ~ ^/get/(.*) {
+    proxy_pass https://disqus.com/api/3.0/$1?api_key=E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F&$args;
+    proxy_set_header Referer https://disqus.com;
+    proxy_set_header Origin https://disqus.com;
+    proxy_redirect off;
+  }
